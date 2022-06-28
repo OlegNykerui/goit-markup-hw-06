@@ -71,7 +71,7 @@
 
             <div class="field">
              <label class="label-field"  for="name">Имя</label>
-             <input class="form-input" type="text" name="name" id="name">
+             <input class="form-input" type="text" name="name" id="name" autofocus>
              <svg class="icon-modul" width="18px" height="18px">
                  <use href="./images/sprite.svg#icon-person-black-18dp-1">
 
@@ -96,12 +96,22 @@
              </svg>
               </div>
                 <div class="field">
-                    <label class="label-field" for="comments">Комментарий</label>
-             <textarea class="label-field" name="comments" id="comments" cols="30" rows="10" placeholder="Введите текст"></textarea>
+                    <label class="label-field"  for="comments">Комментарий</label>
+             <textarea class="textarea" name="comments" id="comments"  placeholder="Введите текст"></textarea>
                 </div>
             <div class="field ">
-                <input type="checkbox" name="checkbox" id="checkbox">
-                <label class="checkbox" for="checkbox"><span class="checkbox"> Соглашаюсь с рассылкой и принимаю  </span> <a class="modal-link" href=""> Условия договора</a> </label>
+                
+                <label class="label-checkbox" for="checkbox">
+                    <input class="input-checkbox visually-hidden"  type="checkbox" name="checkbox" id="checkbox">
+                    <span class="modal-checkbox"> 
+                        <svg class="icon-checkbox" width="16px" height="15px">
+                            <use href="./images/sprite.svg#icon-vector-checked"></use>
+                        </svg>
+                    </span>
+                    <span class="checkbox">Соглашаюсь с рассылкой и принимаю&nbsp; </span> 
+                    <a class="modal-link" href="">Условия договора</a> 
+                
+                </label>
              </div>
 
              <button class="modal-button" type="submit">Отправить</button>
