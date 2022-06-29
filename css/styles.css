@@ -382,6 +382,10 @@ textarea {
   letter-spacing: 0.01em;
 }
 
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-link {
   font-weight: 400;
   font-size: 14px;
