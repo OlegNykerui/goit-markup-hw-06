@@ -93,7 +93,25 @@ img {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  max-width: 100px;
+
+  /* animation: tracking-in-contract-bck-top 1500ms cubic-bezier(0.215, 0.61, 0.355, 1) 1 both; */
 }
+
+/* @keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+} */
 
 .nav {
   display: flex;
@@ -466,7 +484,6 @@ textarea::placeholder {
 }
 
 .input-checkbox:checked + .modal-checkbox {
-  background-color: #fff;
   border: transparent;
 }
 
