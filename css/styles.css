@@ -54,7 +54,13 @@ img {
   overflow: hidden;
 }
 
-/*----------- навігація---------- */
+.header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
 
 .container {
   margin-left: auto;
@@ -67,23 +73,12 @@ img {
   /* outline: 2px solid tomato; */
 }
 
-.page-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-align: center;
+.header-nav {
+  display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 /* LOGO */
-.logo-web {
-  color: var(--accent-color);
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-}
 
 .logo {
   color: var(--logo-title-color);
@@ -113,9 +108,13 @@ img {
   }
 } */
 
-.nav {
-  display: flex;
-  align-items: center;
+.logo-web {
+  color: var(--accent-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
 }
 
 .link:hover,
@@ -132,7 +131,7 @@ img {
   margin-right: 50px;
 }
 
-.header {
+.header-test {
   display: flex;
   align-items: center;
 
@@ -504,15 +503,22 @@ textarea::placeholder {
   padding-bottom: 94px;
 }
 
-.main-feauters {
+.feauters__list {
   display: flex;
 }
 
-.main-feauters {
-  display: flex;
+.feauters__item {
+  margin-right: 30px;
+
+  width: 270px;
+  height: 251px;
 }
 
-.feauters-icon-container {
+.feauters__item:last-child {
+  margin-right: 0;
+}
+
+.feauters__container {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
@@ -523,7 +529,7 @@ textarea::placeholder {
   align-items: center;
 }
 
-.feauters-title {
+.feauters__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -535,7 +541,7 @@ textarea::placeholder {
   margin-bottom: 10px;
 }
 
-.feauters-text {
+.feauters__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -545,14 +551,14 @@ textarea::placeholder {
   margin-bottom: 0px;
 }
 
-.feauters-item {
+.feauters__item {
   margin-right: 30px;
 
   width: 270px;
   height: 251px;
 }
 
-.feauters-item:last-child {
+.feauters__item:last-child {
   margin-right: 0;
 }
 
